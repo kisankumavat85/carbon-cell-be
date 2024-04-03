@@ -10,18 +10,3 @@ declare module "express-serve-static-core" {
     } | null;
   }
 }
-
-export type PublicAPIsEntry = {
-  API: string;
-  Description: string;
-  Auth: string;
-  HTTPS: true;
-  Cors: string;
-  Link: string;
-  Category: string;
-};
-
-export type PublicAPIsData = {
-  count: number;
-  entries: PublicAPIsEntry[] | null;
-};

@@ -2,7 +2,7 @@ import { RequestHandler } from "express";
 import fetch from "node-fetch";
 
 import HttpError from "../utils";
-import { PublicAPIsData } from "../types/express";
+import { PublicAPIsData } from "../types";
 
 const BASE_URL = "https://api.publicapis.org/entries";
 
