@@ -3,12 +3,12 @@ import dotenv from "dotenv";
 
 import rootRouter from "./routes/root";
 import authRoutes from "./routes/auth";
-import { validationErrorHandler } from "./middlewares/validation-error";
-import { errorHandler, notFoundHandler } from "./middlewares/error-handler";
+import ethereumRoute from "./routes/ethereum";
 import publicAPIsRoute from "./routes/public-apis";
 import userRoute from "./routes/user";
+import { validationErrorHandler } from "./middlewares/validation-error";
+import { errorHandler, notFoundHandler } from "./middlewares/error-handler";
 import swaggerDocs from "./libs/swagger";
-import ethereumRoute from "./routes/ethereum";
 
 dotenv.config();
 

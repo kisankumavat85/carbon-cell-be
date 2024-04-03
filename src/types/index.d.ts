@@ -1,3 +1,16 @@
+import { JwtPayload } from "jsonwebtoken";
+
+declare module "express-serve-static-core" {
+  interface Request {
+    user: {
+      id: string;
+      email: string;
+      firstName: string;
+      lastName: string;
+    } | null;
+  }
+}
+
 export type PublicAPIsEntry = {
   API: string;
   Description: string;
